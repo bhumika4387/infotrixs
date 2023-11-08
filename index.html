@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 242, 0);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            color: #fff; 
+        }
+
+        .weather-app {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .location {
+            margin-bottom: 10px;
+        }
+
+        .city {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .country {
+            font-size: 18px;
+            color: #777;
+        }
+
+        .weather-details {
+            text-align: center;
+        }
+
+        .temperature {
+            font-size: 48px;
+            color: #ff9900;
+        }
+
+        .temp {
+            margin: 0;
+        }
+
+        .weather-icon {
+            width: 80px;
+            height: 80px;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #444;
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 150px;
+            font-size: 16px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.7); 
+        }
+      .search-bar::placeholder {
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <input type="text" class="search-bar" placeholder="Enter a location">
+    <div class="weather-app">
+        <div class="location">
+            <h1 class="city">City Name</h1>
+            <p class="country">Country</p>
+        </div>
+        <div class="weather-details">
+            <div class="temperature">
+                <p class="temp">25°C</p>
+                <img src="https://w7.pngwing.com/pngs/166/384/png-transparent-cloud-sun-sunny-weather-weather-flat-icon.png" alt="Weather Icon" class="weather-icon">
+            </div>
+            <p class="description">Sunny with clear skies</p>
+        </div>
+    </div>
+</body>
+</html>
